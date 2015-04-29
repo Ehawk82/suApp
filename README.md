@@ -1,1 +1,2 @@
 # suApp
+suApp repository is an app made to emulate the suicide prevention checklist at the Department of Veteran Affairs.  The idea is to give anyone who may suffer from depression, anxiety, trauma, PTSD, suicidal thoughts, and other mental illness a chance to log their triggers, sponsors, and internal coping skills.  Every onload will generate a random quote that is meant to inspire or uplift someones heart.  There is a crisis hotline number available in the top menu aswell.  My hopes are to be able to help people remember their plan to stay safe when on the go.
