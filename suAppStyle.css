@@ -4,6 +4,7 @@ body {
 #header {
     background:#3498db;
 	width:100%;
+	border:2px ridge white;
 }
 .c1 {
    width:60%;
@@ -47,7 +48,7 @@ div {
 #dvContainer {
     display:none;
 	position:absolute;
-	z-index:49;
+	z-index:15;
 	background:black;
 	color:white;
 	width:100%;
@@ -60,7 +61,8 @@ div {
 }
 #goHome {
     float:left;
-	font-size:70%;
+	font-size:80%;
+	font-weight:700;
 }
 .lblClass {
     width:50%;
@@ -93,4 +95,13 @@ div {
 }
 .xData {
     color:red;
+}
+#footer {
+    position:fixed;
+	bottom:0px;
+	z-index:15;
+	background:#3498db;
+	width:98%;
+	height:4%;
+	border:2px ridge white;
 }
