@@ -68,17 +68,16 @@
                           ];
                 Qlen = quotes.length;
                 rand = Math.round(Math.random()*(Qlen - 1));
-  
                 
-                elems = "<div id='header'><h1><center>Safe App</h1></center><hr id='hr1' /><div id='goHome'>&nbsp;Home</div><div style='text-align:right;font-size:70%;'>In case of emergency please call National Suicide Prevention Lifeline Phone Number: <a href='tel:+18002738255'>1-800-273-8255</a>&nbsp;</div></div>";
-                elems += "<div id='wrapper'><div><center><div id='intro'><center><h2>intro</h2><button id='introBtn' class='btnClass'>Edit</button><br /><br /><br /><button id='loadData' class='btnClass'>Load</button><br /><br /><br /><br /><div id='QuoteDay'></div></center></div><div id='dvContainer'><p style='color:red;'>There are no Entries at this time</p></div>";
+                elems = "<div id='header'><h1><center>Tutis</h1></center><hr id='hr1' /><div id='goHome'>&nbsp;Home</div><br /><div style='text-align:left;font-size:100%;'>&nbsp;In case of emergency please call National Suicide Prevention Lifeline Phone Number: <a href='tel:+18002738255'>1-800-273-8255</a>&nbsp;</div></div>";
+                elems += "<div id='wrapper'><div><center><div id='intro'><center><br />Welcome to Tutis, an app meant to help people keep track of their condition while on the go!<h2>&nbsp;</h2><button id='introBtn' class='btnClass'>New</button><br /><br /><br /><button id='loadData' class='btnClass'>Load</button><br /><br /><br /><br /><div id='QuoteDay'></div></center></div><div id='dvContainer'><p style='color:red;'>There are no Entries at this time</p></div>";
                 elems += "<br /><br /><br /><form id='formId' autocomplete='off'><label for='nameTxt' class='lblClass'>What are your warning signs?</label><br /><input id='nameTxt' class='c1'/><br />";
                 elems += "<label for='des' class='lblClass'>What are your internal coping strategies?</label><br /><input id='des' class='c1' /><br />";
                 elems += "<label for='numbers' class='lblClass'>Who are some of the people you can call?</label><br /><input id='numbers' class='c1' /><br />";
                 elems += "<label for='cope' class='lblClass'>Plan of action to make the environment safer</label><br /><input id='cope' class='c1' />";
-                elems += "</form><p id='spacer1'>&nbsp;<p><hr />";
-                elems += "<div id='spacer'>&nbsp;</div>";
-                elems += "<div id='footer'><h5>Developed by Ehawk&copy; base on Department of Veterans Affairs Suicide Prevention Guidelines.</h5></div></center></div>";//footer & end of elems
+                elems += "</form><p id='spacer1'>&nbsp;<p>";
+                elems += "<div id='spacer'>&nbsp;</div></div>";
+                elems += "<div id='footer'>&nbsp;Developed by Ehawk based on Department of Veterans Affairs Suicide Prevention Guidelines.</div></center>";//footer
                 body.innerHTML = elems;
                 introBtn = document.getElementById("introBtn");
                 introBtn.addEventListener('click', UIlogic.clearIntro, false);
@@ -123,7 +122,7 @@
                     renderData += "<div><h4>Coping Strategy</h4></div>" + "<div>" + data.des +"</div><br />";
                     renderData += "<div><h4>People to Call</h4></div>"+ "<div>" + data.nums + "</div><br />";
                     renderData += "<div><h4>Safety Plan</h4></div>" +"<div>"+ data.cope + "</div><br />";
-                    renderData += "<div class='xData' data-id='xData' data-index='"+key+"'>" + "Delete" + "</div><br /><hr />";
+                    renderData += "<div class='xData' data-id='xData' data-index='"+key+"'>" + "Delete" + "</div><br />";
                     //set a data-id and data-index to this element, we need them to select the correct information.
                 }
                 renderData += "<br /></div></center></div>";
