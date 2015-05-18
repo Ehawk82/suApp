@@ -20,7 +20,7 @@
                 header.appendChild(styleSheet);
             },
             suApp: function () {
-                var elems, introBtn, loading, gBack, Qlen, quotes, rand, QuoteDay;
+                var elems, introBtn, loading, gBack, Qlen, quotes, rand, QuoteDay, p1;
                 
                 quotes = ["\"Start by doing what's necessary; then do what's possible, and suddenly you are doing the impossible\" ~Francis of Assisi",
                           "\"I can't change the direction of the wind, but I can adjust my sails to always reach my destination\" ~Jimmy Dean",
@@ -69,15 +69,15 @@
                 Qlen = quotes.length;
                 rand = Math.round(Math.random()*(Qlen - 1));
                 
-                elems = "<div id='header'><h1><center>Tutis</h1></center><hr id='hr1' /><div id='goHome'>&nbsp;Home</div><br /><div style='text-align:left;font-size:100%;'>&nbsp;In case of emergency please call National Suicide Prevention Lifeline Phone Number: <a href='tel:+18002738255'>1-800-273-8255</a>&nbsp;</div></div>";
-                elems += "<div id='wrapper'><div><center><div id='intro'><center><br />Welcome to Tutis, an app meant to help people keep track of their condition while on the go!<h2>&nbsp;</h2><button id='introBtn' class='btnClass'>New</button><br /><br /><br /><button id='loadData' class='btnClass'>Load</button><br /><br /><br /><br /><div id='QuoteDay'></div></center></div><div id='dvContainer'><p style='color:red;'>There are no Entries at this time</p></div>";
+                elems = "<div id='header'><h1><center>Salus</h1></center><center><hr class='hr1' /><div id='goHome'>&nbsp;Home</div></center><br /><hr class='hr1'/><div id='numberSu'>&nbsp;In case of emergency please call National Suicide Prevention Lifeline Phone Number: <a href='tel:+18002738255'>1-800-273-8255</a>&nbsp;</div></div>";
+                elems += "<div id='wrapper'><div><center><div id='intro'><center><br />Welcome to Salus, an app meant to help people keep track of their condition while on the go!<h2>&nbsp;</h2><button id='introBtn' class='btnClass'>New</button><br /><br /><br /><button id='loadData' class='btnClass'>Load</button><br /><br /><br /><br /><div id='QuoteDay'></div></center></div><div id='dvContainer'><p style='color:red;'>There are no Entries at this time</p></div>";
                 elems += "<br /><br /><br /><form id='formId' autocomplete='off'><label for='nameTxt' class='lblClass'>What are your warning signs?</label><br /><input id='nameTxt' class='c1'/><br />";
-                elems += "<label for='des' class='lblClass'>What are your internal coping strategies?</label><br /><input id='des' class='c1' /><br />";
-                elems += "<label for='numbers' class='lblClass'>Who are some of the people you can call?</label><br /><input id='numbers' class='c1' /><br />";
-                elems += "<label for='cope' class='lblClass'>Plan of action to make the environment safer</label><br /><input id='cope' class='c1' />";
-                elems += "</form><p id='spacer1'>&nbsp;<p>";
-                elems += "<div id='spacer'>&nbsp;</div></div>";
-                elems += "<div id='footer'>&nbsp;Developed by Ehawk based on Department of Veterans Affairs Suicide Prevention Guidelines.</div></center>";//footer
+                elems += "<br /><label for='des' class='lblClass'>What are your internal coping strategies?</label><br /><input id='des' class='c1' /><br />";
+                elems += "<br /><label for='numbers' class='lblClass'>Who are some of the people you can call?</label><br /><input id='numbers' class='c1' /><br />";
+                elems += "<br /><label for='cope' class='lblClass'>Plan of action to make the environment safer</label><br /><input id='cope' class='c1' />";
+                elems += "</form><p id='spacer1'><p>";
+                elems += "<div id='spacer'></div></div></form>";
+                elems += "<center><div id='footer'><p id='p2'>&nbsp;Developed by Ehawk based on <a href='http://www.mentalhealth.va.gov/suicide_prevention/' target='_blank'>Department of Veterans Affairs Suicide Prevention Guidelines.</a></p><form id='p1' action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'><input type='hidden' name='cmd' value='_s-xclick'><input type='hidden' name='encrypted' value='-----BEGIN PKCS7-----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-----END PKCS7-----'><input id='payImage' type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'><img alt='' border='0' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1'></form></div>";//footer
                 body.innerHTML = elems;
                 introBtn = document.getElementById("introBtn");
                 introBtn.addEventListener('click', UIlogic.clearIntro, false);
@@ -86,7 +86,7 @@
                 
                 gBack = document.getElementById('goHome');
                 gBack.addEventListener("click", resetPage, false);
-                
+
                 document.getElementById("QuoteDay").innerHTML = "<div>Quote of the Moment:</div>" + quotes[rand];
             },
             saveitem: function () {
@@ -107,7 +107,7 @@
                 datacount = localStorage.length;
             if (datacount > 0) {
                 renderData = "<div><center>";
-                renderData += "<div><h2>Safe Planner</h2></div><br />";
+                renderData += "<div><h2>Log</h2></div><br />";
                 for (i = 0; i < datacount; i++) {
                     key = localStorage.key(i); //Get Key 
                     goals = localStorage.getItem(key); //Get Data
@@ -118,10 +118,10 @@
                     {
                       continue;
                     }
-					renderData += "<div><h4>Triggers</h4></div>" + "<div>"+ data.Name + "</div><br />";
-                    renderData += "<div><h4>Coping Strategy</h4></div>" + "<div>" + data.des +"</div><br />";
-                    renderData += "<div><h4>People to Call</h4></div>"+ "<div>" + data.nums + "</div><br />";
-                    renderData += "<div><h4>Safety Plan</h4></div>" +"<div>"+ data.cope + "</div><br />";
+					renderData += "<h4>Triggers<br />" + data.Name + "</h4><br />";
+                    renderData += "<h4>Coping Strategy<br />" + data.des +"</h4><br />";
+                    renderData += "<h4>People to Call<br />"+ data.nums + "</h4><br />";
+                    renderData += "<h4>Safety Plan<br />" + data.cope + "</h4><br />";
                     renderData += "<div class='xData' data-id='xData' data-index='"+key+"'>" + "Delete" + "</div><br />";
                     //set a data-id and data-index to this element, we need them to select the correct information.
                 }
