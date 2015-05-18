@@ -15,16 +15,13 @@ h4 {
 	padding:3% 0%;
 }
 #p1 {
-    position:relative;
-    width:1%;
-	top:0px;
-	height:1%;
-	float:right;
-	right:30%;
+	height:10vh;
+	position:absolute;
+	bottom:50px;
 }
 #payImage {
-    height:7vh;
-	width:16vw;
+    height:5vh;
+	width:12vw;
 }
 #p2 {
     width:50%;
@@ -79,7 +76,8 @@ div {
 	width:100%;
 }
 #spacer {
-    height:300px;
+    height:50vh;
+	position:relative;
 }
 #spacer1 {
     height:40px;
@@ -136,7 +134,7 @@ div {
 	z-index:45;
 	background:#3498db;
 	width:90%;
-	height:7vh;
+	height:9vh;
 	border:2px ridge white;
-	font-size:60%;
+	font-size:50%;
 }
