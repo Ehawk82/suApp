@@ -1,35 +1,59 @@
 body {
     background:black;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight:700;
 }
 #header {
     background:#3498db;
 	width:100%;
-	border:2px ridge white;
+	border:2px solid black;
+}
+h4 {
+    background:#EBE6E2;
+	width:30%;
+	color:black;
+	padding:3% 0%;
+}
+#p1 {
+    position:relative;
+    width:1%;
+	top:0px;
+	height:1%;
+	float:right;
+	right:30%;
+}
+#payImage {
+    height:7vh;
+	width:16vw;
+}
+#p2 {
+    width:50%;
+	float:left;
+	position:relative;
 }
 .c1 {
-   width:60%;
-   font-size:120%;
    height:10%;
 }
  .c1 {
-    border: 3px solid #EBE6E2;
+    border: 8px solid #EBE6E2;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-	width:50%;
+	width:60%;
     font-size:120%;
-    height:10%;
+    height:10vh;
 }
 div {
     color:white;
 }
-#hr1 {
+.hr1 {
     background:black;
 	border-color:black;
 	color:black;
+	border:5px solid black;
 }
 .c1:focus {
     border-color: #3498db;
@@ -41,6 +65,7 @@ div {
 	width:97%;
 	color:white;
 	position:absolute;
+	padding:5% 0%;
 }
 :focus { 
 	outline:0;
@@ -60,8 +85,7 @@ div {
     height:40px;
 }
 #goHome {
-    float:left;
-	font-size:80%;
+	font-size:160%;
 	font-weight:700;
 }
 .lblClass {
@@ -79,10 +103,14 @@ div {
     border-radius: 28px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    font-size: 180%;
     text-decoration: none;
-    width:30%;
+    width:50%;
+	height:18vh;
+}
+#QuoteDay {
+   font-size:130%;
+   height:32vh;
 }
 .btnClass:hover {
     background: #3cb0fd;
@@ -94,14 +122,21 @@ div {
     text-decoration: none;
 }
 .xData {
-    color:red;
+	background:#3498db;
+	width:30vw;
+	height:8vh;
+	padding:8% 0%;
+}
+#numberSu {
+    padding:16px 0px;
 }
 #footer {
     position:fixed;
 	bottom:0px;
-	z-index:15;
+	z-index:45;
 	background:#3498db;
-	width:98%;
-	height:4%;
+	width:90%;
+	height:7vh;
 	border:2px ridge white;
+	font-size:60%;
 }
