@@ -24,7 +24,6 @@ h4 {
 	width:12vw;
 }
 #p2 {
-    width:50%;
 	float:left;
 	position:relative;
 }
@@ -69,6 +68,7 @@ div {
 }
 #dvContainer {
     display:none;
+	font-size:170%;
 	position:absolute;
 	z-index:15;
 	background:black;
@@ -133,8 +133,9 @@ div {
 	bottom:0px;
 	z-index:45;
 	background:#3498db;
-	width:90%;
-	height:9vh;
+	width:98%;
+	height:5%;
 	border:2px ridge white;
 	font-size:50%;
+	clear:both;
 }
