@@ -59,8 +59,8 @@
                 Qlen = quotes.length;
                 rand = Math.round(Math.random()*(Qlen - 1));
                 
-                elems = "<div id='header'><h1><center>Salus</h1></center><center><audio id='audiotag1' src='sounds/01.wav' preload='auto'></audio><hr class='hr1' /><div id='goHome'><br />Home</div></center><br /><hr class='hr1'/><div id='numberSu'><center>In case of emergency please call National Suicide Prevention Lifeline Phone Number: <a href='tel:+18002738255'>1-800-273-8255</a></center></div></div>";
-                elems += "<div id='wrapper'><div><center><div id='intro'><center><br />Welcome to Salus, an app meant to help people keep track of their condition while on the go!<h2>&nbsp;</h2><button id='introBtn' class='btnClass'>New</button><br /><br /><br /><button id='loadData' class='btnClass'>Load</button><br /><br /><br /><br /><div id='QuoteDay'></div></center></div><div id='dvContainer'><p style='color:#3498db;'>There are no Entries at this time</p></div>";
+                elems = "<div id='header'><center><h1>Salus</h1><audio id='audiotag1' src='sounds/01.wav' preload='auto'></audio><hr class='hr1' /><h1 id='goHome'><br />Home</h1><hr class='hr1'/><div id='numberSu'>In case of emergency, please call National Suicide Prevention Lifeline Phone Number: <a href='tel:+18002738255'>1-800-273-8255</a></div></div>";
+                elems += "<div id='wrapper'><div><center><div id='intro'><center><br />Salus is a tool meant to help people keep track of their mental health condition while on the go!<h2>&nbsp;</h2><button id='introBtn' class='btnClass'>New</button><br /><br /><br /><button id='loadData' class='btnClass'>Load</button><br /><br /><br /><br /><div id='QuoteDay'></div></center></div><div id='dvContainer'><p style='color:#3498db;'>There are no Entries at this time</p></div>";
                 elems += "<br /><br /><br /><form id='formId' autocomplete='off'><br /><br /><label for='nameTxt' class='lblClass'>What are your warning signs?</label><br /><input id='nameTxt' class='c1'/><br />";
                 elems += "<br /><label for='des' class='lblClass'>What are your internal coping strategies?</label><br /><input id='des' class='c1' /><br />";
                 elems += "<br /><label for='numbers' class='lblClass'>Who are some of the people you can call?</label><br /><input id='numbers' class='c1' /><br />";
@@ -69,22 +69,22 @@
                 elems += "<div id='spacer'><form id='p1' action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'><input type='hidden' name='cmd' value='_s-xclick'><input type='hidden' name='encrypted' value='-----BEGIN PKCS7-----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-----END PKCS7-----'><input id='payImage' type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'><img alt='' border='0' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1'></form></div></div><br />";
                 elems += "<center><div id='footer'><p id='p2'>&nbsp;Developed by Ehawk based on <a href='http://www.mentalhealth.va.gov/suicide_prevention/' target='_blank'>Department of Veterans Affairs Suicide Prevention Guidelines.</a></p></div>";//footer
                 body.innerHTML = elems;
-                
+
                 aud = document.getElementById("audiotag1");
                 aud.volume = 0.05;
-                
+
                 introBtn = document.getElementById('introBtn');
                 introBtn.addEventListener('click', UIlogic.soundFunc, false);
-                
+
                 loadData = document.getElementById('loadData');
                 loadData.addEventListener('click', UIlogic.soundFunc, false);
-                
+
                 introBtn = document.getElementById("introBtn");
                 introBtn.addEventListener('click', UIlogic.clearIntro, false);
-                
+
                 loading = document.getElementById("loadData");
                 loading.addEventListener('click', UIlogic.LoadData, false);
-                
+
                 gBack = document.getElementById('goHome');
                 gBack.addEventListener("click", resetPage, false);
 
